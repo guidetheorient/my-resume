@@ -1,0 +1,345 @@
+/* css reset */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*::after{
+  box-sizing: border-box;
+}
+*::before{
+  box-sizing: border-box;
+}
+ul,li{
+  list-style: none;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+body{
+  font-family: -apple-system,"Source Sans Pro", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+}
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.clearfix:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*css specified*/
+html,body{
+  height: 100%;
+}
+#side{
+  float:left;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background: #eee;
+  text-align: center;
+}
+#side .head{
+  margin: 0 auto;
+  text-align: center;
+}
+#side .portrait{
+  margin-top: 70px;
+  margin-bottom: 30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px 0 rgba(84,84,120,0.3);
+}
+#side .name{
+  font-size: 20px;
+  font-weight: 700;
+}
+#side .profession{
+  padding-bottom: 70px;
+  font-size: 16px;
+  line-height: 2;
+  color: #606470;
+}
+#side .info-list{
+  display: inline-block;
+  text-align: left;
+}
+#side .info-list>li{
+  line-height: 2.5;
+  margin: 4px 0;
+}
+#side .info-list>li>a{
+  display: block;
+  background: red
+}
+#side .footer{
+  font-size: 32px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+}
+#side .footer>li{
+  display: inline-block;
+  padding: 0 3px;
+}
+#side .icon-github{
+  fill:#24292e;
+}
+#side .icon-mail{
+  fill:#0078d6;
+  transform: scale(1.012439)
+}
+#side .icon-qq{
+  fill:#12b7f5;
+  transform: scale(1.137841)
+}
+#side .icon-weixin{
+  fill:#4cbf2a;
+  transform: scale(1.114294)
+}
+
+#main{
+  margin-left: 250px;
+  height: 100%;
+  min-height: 
+  background: #f7f7f7;
+}
+
+
+.homepage{
+  position: relative;
+  background: url('img/fake1.png') no-repeat center/cover;
+  height: 100%;
+  display: none;
+}
+.homepage.active{
+  display: block;
+}
+.homepage .wrapper{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  text-align: center;
+}
+.homepage .welcome{
+  font-size: 45px;
+  font-weight: 300;
+}
+.homepage .showMore{
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 35px;
+  font-size: 20px;
+  font-weight: 300;
+  background:#e6e6e6;
+  border-radius: 3px;
+}
+
+.layout{
+  width: 850px;
+  margin: 0 auto;
+}
+
+.portfolio{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  position: relative;
+}
+.portfolio .intro{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.portfolio div.headshot{
+  position: relative;
+  background: url('img/portrait.png') no-repeat center/cover;
+  height: 280px;
+  width: 280px;
+  margin-right: 200px;
+}
+.portfolio div.headshot::before{
+  content: '';
+  position: absolute;
+  left:30px;
+  top:-30px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #e6e6e6;
+  z-index: 0;
+}
+.portfolio .aboutMe{
+  width: 340px;
+  line-height: 2.5;
+  font-weight: 300;
+  /* background: violet; */
+}
+.portfolio.active{
+  display: flex;
+}
+.portfolio .next-page{
+  position: absolute;
+  left: 0;
+  bottom:0;
+  height: 40px;
+  width: 40px;
+}
+.portfolio .next-page>.icon{
+  height: 20px;
+  width:20px;
+}
+
+.skills{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+.skills ul.skillList{
+  display: flex;
+  justify-content: space-around;
+}
+.skills ul.skillList>li{
+  background: #e6e6e6;
+  padding: 10px 25px 0 25px;
+  height: 280px;
+  width: 33.333333%;
+}
+.skills h2{
+  line-height: 50px;
+}
+.skills h3{
+  color: #05C7AE;
+  line-height: 40px;
+}
+.skills .skillItem{
+  line-height: 1.8;
+  font-size: 14px;
+  font-weight: 300;
+  color: #606470;
+}
+.skills .skillItem>li{
+  /* list-style-type: disc; */
+  padding-bottom: 8px;
+}
+.skills.active{
+  display: flex;
+}
+
+.projects{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: #f7f7f7;
+  display: none;
+}
+.projects ul.projectList{
+  margin-left: -20px;
+}
+.projects ul.projectList>li{
+  float: left;
+  position: relative;
+  width: 270px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background:#fff;
+  overflow: hidden;
+}
+.projects ul.projectList>li>.preview{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 270px;
+  overflow: hidden;
+}
+.projects ul.projectList>li>.preview>.project-description{
+  opacity: 0;
+  padding: 0 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  color: #000;
+  background: rgba(230,230,230,0.9);
+  transition: .3s;
+  z-index: 2;
+}
+.projects ul.projectList>li>.preview>.project-description ul{
+  position: absolute;
+  bottom: 10px;
+  font-size: 14px;
+  font-weight: 300;
+}
+.projects ul.projectList>li>.preview>.project-description ul>li{
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+.projects ul.projectList>li>.preview:hover>.project-description{
+  opacity: 1;
+}
+.projects ul.projectList>li>.preview>img{
+  box-shadow: 12px 10px 10px 1px rgba(230,230,230,1);
+  transition: 1s;
+}
+.projects ul.projectList>li>.preview:hover>img{
+  transform: scale(1.5);
+  /* opacity: 0.4; */
+}
+.projects ul.projectList>li>.preview>.netease{
+  width: 190px;
+  /* transform: skew(18deg,-4deg); */
+}
+.projects ul.projectList>li>.preview>.resume{
+  width: 220px;
+}
+.projects ul.projectList>li>.preview>.todo{
+  width: 210px;
+}
+
+.projects ul.projectList>li>.projectInfo{
+  margin: 10px 0;
+  padding: 24px 46px 30px 24px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px
+}
+.projects .projectLink{
+  position: absolute;
+  right: 0;
+  bottom:0;
+  height: 46px;
+  width: 92px;
+  text-align: center;
+  box-shadow: 4px 4px 31px 8px rgba(230,230,230,0.7);
+  font-size: 0;
+}
+.projects .projectLink>a{
+  display: inline-block;
+  width: 46px;
+}
+.projects .projectLink>a:first-child{
+  border-right: 1px solid rgba(230,230,230,0.6)
+}
+.projects .projectLink .icon{
+  height: 46px;
+  width: 18px;
+}
+.projects.active{
+  display: flex;
+}

@@ -146,10 +146,10 @@ html,body{
   border-radius: 4px;
 }
 #side .footer>li>.tooltip.qq{
-  background: #fff url('/src/img/qrcode-qq.jpg') no-repeat center/85% 85%;
+  background: #fff url('img/qrcode-qq.jpg') no-repeat center/85% 85%;
 }
 #side .footer>li>.tooltip.weixin{
-  background: #fff url('/src/img/qrcode-weixin.png') no-repeat center/97% 97%;
+  background: #fff url('img/qrcode-weixin.png') no-repeat center/97% 97%;
 }
 #side .footer>li .tooltip .triangle{
   position:absolute;

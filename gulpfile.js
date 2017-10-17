@@ -77,10 +77,10 @@ gulp.task('rev',['dist:css',"dist:js","cssJsPathInHtml"], function() {
 
 gulp.task('copy',function(){
   gulp.src(['dist/img/','dist/lib/']).pipe(clean());
-  return gulp.src(['src/lib/**/*'])
-      .pipe(gulp.dest('dist/lib'))
+  return gulp.src(['src/**/*','!src/*.*'])
+      .pipe(gulp.dest('dist/'))
 })
-gulp.task('default',['rev'])
+gulp.task('default',['rev','copy'])
 
 //监听css，js修改
 gulp.task('watch',function () {

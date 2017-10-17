@@ -84,7 +84,7 @@ gulp.task('default',['rev','copy'])
 
 //监听css，js修改
 gulp.task('watch',function () {
-  gulp.watch('src/**/*',['rev'])
+  gulp.watch('src/**/*',['default'])
 })
 
 

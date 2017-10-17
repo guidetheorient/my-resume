@@ -1,5 +1,6 @@
 /*!
-*  fork
+ *   fork
+
  * pagepiling.js 1.5.4
  *
  * https://github.com/alvarotrigo/pagePiling.js
@@ -173,6 +174,9 @@ function scrollPage(destination, animated) {
   // }
 
   v.destination.addClass('active').siblings().removeClass('active');
+  
+  $('#side .info-list>li').eq(v.sectionIndex).addClass('active').siblings().removeClass('active')
+  
 
   v.sectionsToMove = getSectionsToMove(v);
 
@@ -273,7 +277,6 @@ function performMovement(v){
       v.sectionsToMove.each(function(){
           transformContainer($(this), v.translate3d, v.animated);
       });
-      console.log(1)
       // setTimeout(function () {
       //     afterSectionLoads(v);
       // }, options.scrollingSpeed);
@@ -334,3 +337,15 @@ var scrollDelay = 600;
 
 addMouseWheelHandler()
 
+$(document).on('click', '#side .info-list a', function(e){
+  e.preventDefault();
+  var index = $(this).parent().index();
+
+  scrollPage($('.section').eq(index));
+
+  $(this).parent().addClass('active').siblings().removeClass('active')
+});
+$('.showMore').on('click',function(){
+  console.log(1)
+  $('#side .info-list a').eq(1).trigger('click')
+})

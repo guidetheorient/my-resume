@@ -37,7 +37,7 @@ html,body{
   height: 100%;
 }
 #side{
-  float:left;
+  /* float:left; */
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -142,7 +142,7 @@ html,body{
   display: block;
 }
 
-/*#side和#main .projects公有 */
+/*common css   #side和#main .projects公有 */
 .tooltip{
   display: none;
   position: absolute;
@@ -223,7 +223,6 @@ html,body{
   background: #f7f7f7;
 }
 
-
 .homepage{
   position: relative;
   background: url('img/fake1.png') no-repeat center/cover;
@@ -254,9 +253,12 @@ html,body{
   border-radius: 3px;
 }
 
+/*common css*/
 .layout{
-  width: 850px;
-  margin: 0 auto;
+  min-width: 880px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
 .portfolio{
@@ -307,8 +309,9 @@ html,body{
   /* display: none; */
 }
 .skills ul.skillList{
+  max-width: 960px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .skills ul.skillList>li{
   background: #e6e6e6;
@@ -350,6 +353,9 @@ html,body{
   align-items: center;
   background: #f7f7f7;
   /* display: none; */
+}
+.projects .wrap{
+  width: 850px;  
 }
 .projects ul.projectList{
   margin-left: -20px;
@@ -403,6 +409,9 @@ html,body{
   box-shadow: 12px 10px 10px 1px rgba(230,230,230,1);
   transition: 1s;
 }
+.projects ul.projectList>li:nth-child(4)>.preview>img{
+  box-shadow: none;
+}
 .projects ul.projectList>li>.preview:hover>img{
   transform: scale(1.5);
   /* opacity: 0.4; */
@@ -417,7 +426,9 @@ html,body{
 .projects ul.projectList>li>.preview>.todo{
   width: 210px;
 }
-
+.projects ul.projectList>li>.preview>.other{
+  width: 180px;
+}
 .projects ul.projectList>li>.projectInfo{
   margin: 10px 0;
   padding: 10px 46px 20px 24px;
@@ -435,6 +446,9 @@ html,body{
   box-shadow: 4px 4px 31px 8px rgba(230,230,230,0.7);
   font-size: 0;
 }
+.projectLink.half{
+  width: 46px;  
+}
 .projects .projectLink>a{
   display: inline-block;
   width: 46px;
@@ -451,14 +465,8 @@ html,body{
 } */
 
 .easing {
-  -webkit-transition: all 1000ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-  -moz-transition: all 1000ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-  -o-transition: all 1000ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
   transition: all 1000ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
   /* custom */
-  -webkit-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-  -moz-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-  -o-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
   transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
   /* custom */
 }

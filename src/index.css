@@ -181,7 +181,7 @@ html,body{
   background: #fff url('img/qrcode-qq.jpg') no-repeat center/85% 85%;
 }
 #side .footer>li>.tooltip.weixin{
-  background: #fff url('img/qrcode-weixin.png') no-repeat center/97% 97%;
+  background: #fff url('img/qrcode-weixin.jpg') no-repeat center/97% 97%;
 }
 
 #main .projectLink a .tooltip{
@@ -193,7 +193,7 @@ html,body{
   display: block;
 }
 #main .projectLink .tooltip.netease{
-  background: #fff url('img/qrcode-netease.png') no-repeat center/88% 88%;
+  background: #fff url('img/qrcode-netease.jpg') no-repeat center/88% 88%;
 }
 
 
@@ -225,7 +225,7 @@ html,body{
 
 .homepage{
   position: relative;
-  background: url('img/fake1.png') no-repeat center/cover;
+  background: url('img/fake1.jpg') no-repeat center/cover;
   height: 100%;
   /* display: none; */
 }

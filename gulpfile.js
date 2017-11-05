@@ -77,7 +77,7 @@ gulp.task('rev',['dist:css',"dist:js","cssJsPathInHtml"], function() {
 
 gulp.task('copy',function(){
   gulp.src(['dist/img/','dist/lib/']).pipe(clean());
-  return gulp.src(['src/**/*','!src/*.*'])
+  return gulp.src(['src/**/*','!src/*.*','!src/img/raw'])
       .pipe(gulp.dest('dist/'))
 })
 gulp.task('default',['rev','copy'])
@@ -100,14 +100,14 @@ gulp.task('jshint', function () {
       .pipe(jshint(jshintConfig))
       .pipe(jshint.reporter('default'));
 });
-// const imagemin = require('gulp-imagemin');
-// const imageminOptipng = require('imagemin-optipng');
-// const imageminJpegtran = require('imagemin-jpegtran');
-// gulp.task('imagemin',function(){
-//   gulp.src('src/img/*')
-//   .pipe(imagemin([
-//     imagemin.optipng({optimizationLevel: 5}),
-//     imagemin.jpegtran({progressive: true})
-//   ]))
-//   .pipe(gulp.dest('dist/img/'))
-// })
+const imagemin = require('gulp-imagemin');
+const imageminOptipng = require('imagemin-optipng');
+const imageminJpegtran = require('imagemin-jpegtran');
+gulp.task('imagemin',function(){
+  gulp.src('src/img/*')
+  .pipe(imagemin([
+    imagemin.optipng({optimizationLevel: 5}),
+    imagemin.jpegtran({progressive: true})
+  ]))
+  .pipe(gulp.dest('dist/img/'))
+})

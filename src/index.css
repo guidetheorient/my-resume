@@ -314,6 +314,7 @@ html,body{
   justify-content: space-between;
 }
 .skills ul.skillList>li{
+  position: relative;
   background: #e6e6e6;
   padding: 10px 25px 0 25px;
   height: 280px;
@@ -322,6 +323,7 @@ html,body{
   
 }
 .skills ul.skillList>li:hover{
+  z-index: 2;
   transform: scale(1.2);
   background-color: #eee;
   box-shadow: 0 4px 12px 0 rgba(84,84,120,0.3);
@@ -406,28 +408,29 @@ html,body{
   opacity: 1;
 }
 .projects ul.projectList>li>.preview>img{
-  box-shadow: 12px 10px 10px 1px rgba(230,230,230,1);
+  box-shadow: 6px 4px 10px 1px rgba(230,230,230,0.3);
   transition: 1s;
-}
-.projects ul.projectList>li:nth-child(4)>.preview>img{
-  box-shadow: none;
 }
 .projects ul.projectList>li>.preview:hover>img{
   transform: scale(1.5);
-  /* opacity: 0.4; */
 }
 .projects ul.projectList>li>.preview>.netease{
   width: 190px;
-  /* transform: skew(18deg,-4deg); */
 }
 .projects ul.projectList>li>.preview>.resume{
   width: 220px;
 }
 .projects ul.projectList>li>.preview>.todo{
-  width: 210px;
+  width: 120px;
+}
+.projects ul.projectList>li>.preview>.components{
+  width: 160px;
 }
 .projects ul.projectList>li>.preview>.other{
   width: 180px;
+}
+.projects ul.projectList>li>.preview>.takeaway{
+  width: 200px;
 }
 .projects ul.projectList>li>.projectInfo{
   margin: 10px 0;

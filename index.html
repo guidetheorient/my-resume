@@ -12,7 +12,9 @@
 <body>
     <div id="side">
       <div class="head">
-        <img src="./src/img/portrait.png" alt="portraitImg" class="portrait pulse">
+        <div class="portrait-wrapper">
+          <img src="./src/img/IMG_4599.jpg" alt="portraitImg" class="portrait pulse">
+        </div>
         <p class="name">纪东</p>
         <p class="profession">前端开发</p>
       </div>
@@ -35,7 +37,7 @@
           <a href="//github.com/guidetheorient" target="_blank"><svg class="icon icon-github" aria-hidden="true"><use xlink:href="#icon-github"></use></svg></a>
         </li>
         <li>
-          <a href="mailto:1271075090@qq.com"><svg class="icon icon-mail" aria-hidden="true"><use xlink:href="#icon-mail"></use></svg></a>
+          <a href="mailto:chrisji0518@outlook.com"><svg class="icon icon-mail" aria-hidden="true"><use xlink:href="#icon-mail"></use></svg></a>
         </li>
         <li>
           <div class="tooltip qq"><div class="triangle"></div></div>
@@ -50,7 +52,7 @@
     <div id="main">
       <div class="homepage active section">
         <div class="wrapper">
-          <h1 class="welcome">您好，我是纪东</h1>
+          <h1 class="welcome">您好，我是纪东<br/>应聘前端工程师</h1>
           <a class="showMore" href="#">查看更多</a>
         </div>
       </div>
@@ -66,8 +68,8 @@
               <span class="info">前端工程师</span>
             </li>
             <li>
-              <span class="title">目标城市：</span>
-              <span class="info">上海，苏州</span>
+              <span class="title">期望城市：</span>
+              <span class="info">南京</span>
             </li>
             <li>
               <span class="title">学历：</span>
@@ -79,20 +81,20 @@
             </li>
             <li>
               <span class="title">年龄：</span>
-              <span class="info">24</span>
+              <span class="info">25</span>
             </li>
             
             <li>
-              <span class="title">Github：</span>
-              <span class="info">github.com/guidetheorient</span>
+              <span class="title">GitHub：</span>
+              <span class="info"><a href="//github.com/guidetheorient">github.com/guidetheorient</a></span>
             </li>
             <li>
               <span class="title">电话：</span>
-              <span class="info">13057457825</span>
+              <span class="info">17366165660</span>
             </li>
             <li>
               <span class="title">邮箱：</span>
-              <span class="info">1271075090@qq.com</span>
+              <span class="info"><a href="mailto:chrisji0518@outlook.com">chrisji0518@outlook.com</a></span>
             </li>
             <li>
               <span class="title">微信：</span>
@@ -104,19 +106,91 @@
       <div class="projects section easing layout">
         <div class="wrap">
           <ul class="projectList clearfix">
+            <!-- 仿京东商城 -->
+            <li>
+              <div class="preview">
+                <img class="jingdong" src="./src/img/jingdong.jpg" alt="">
+                <div class="project-description">
+                  <ul>
+                    <li>使用：webpack + EJS + jQuery + Sass</li>
+                    <li>功能：主页/登录页/注册页/商品列表页/商品详情页/购物车页/订单确认页/支付页/操作提示页</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="projectInfo">
+                仿京东商城
+              </p>
+              <div class="projectLink half">
+                <!-- <a href="http://jidong.life/dist" target="_blank">
+                  <div class="tooltip netease"><div class="triangle"></div></div>
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-preview1"></use>
+                  </svg>
+                </a> -->
+                <a href="https://github.com/guidetheorient/GTO-jingdong" target="_blank">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-code"></use>
+                  </svg>
+                </a>
+            </li>
+            <!-- Vue外卖WebApp -->
+            <li>
+              <div class="preview">
+                <img class="takeaway" src="./src/img/takeaway.jpg" alt="">
+                <div class="project-description">
+                  <ul>
+                    <li>使用：Vue + vue-cli + better-scroll + vue-router + vue-resource + Sass</li>
+                    <li>功能：商品页/评价页/店铺页的展示/单页路由/购物车/页面滚动/购物车添加动画等</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="projectInfo">Vue外卖WebApp</p>
+              <div class="projectLink half">
+                <a href="https://github.com/guidetheorient/takeaway" target="_blank">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-code"></use>
+                  </svg>
+                </a>
+            </li>
+            <!-- browser-weather -->
+            <li>
+              <div class="preview">
+                <img class="weather" src="./src/img/weather.jpg" alt="">
+                <div class="project-description">
+                  <ul>
+                    <li>使用：原生JS</li>
+                    <li>功能：查询国内天气/搜索历史/收藏</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="projectInfo">
+                天气预报
+              </p>
+              <div class="projectLink">
+                <a href="https://guidetheorient.github.io/browser-weather/dist/" target="_blank">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-preview1"></use>
+                  </svg>
+                </a>
+                <a href="https://github.com/guidetheorient/browser-weather" target="_blank">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-code"></use>
+                  </svg>
+                </a>
+            </li>
             <!-- 网易云音乐 -->
             <li>
               <div class="preview">
                 <img class="netease" src="./src/img/netease.jpg" alt="">
                 <div class="project-description">
                   <ul>
-                    <li>使用：动态rem + flex + jQuery + gulp + audio</li>
-                    <li>功能：实现推荐歌单，热歌榜，歌曲播放，歌词滚动，播放页封面旋转，搜索歌曲，保存搜索历史等</li>
+                    <li>使用：动态rem + flex + jQuery + gulp </li>
+                    <li>功能：实现推荐歌单/热歌榜/歌曲播放/歌词滚动/播放页封面旋转/搜索歌曲/保存搜索历史等</li>
                   </ul>
                 </div>
               </div>
               <p class="projectInfo">
-                某音乐网站移动端页面
+                仿网易移动端页面
               </p>
               <div class="projectLink">
                 <a href="http://jidong.life/dist" target="_blank">
@@ -131,38 +205,19 @@
                   </svg>
                 </a>
             </li>
-            <!-- Vue外卖WebApp -->
+            <!-- 企业站首页 -->
             <li>
               <div class="preview">
-                <img class="takeaway" src="./src/img/takeaway.jpg" alt="">
+                <img class="todo" src="./src/img/websites.jpg" alt="">
                 <div class="project-description">
                   <ul>
-                    <li>使用：Vue + vue-cli + better-scroll + vue-router + vue-resource + Sass</li>
-                    <li>功能：商品页，评价页，店铺页的展示，单页路由，购物车，页面滚动，购物车添加动画等</li>
-                  </ul>
-                </div>
-              </div>
-              <p class="projectInfo">Vue外卖WebApp</p>
-              <div class="projectLink half">
-                <a href="https://github.com/guidetheorient/takeaway" target="_blank">
-                  <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-code"></use>
-                  </svg>
-                </a>
-            </li>
-            <!-- vue-todo -->
-            <li>
-              <div class="preview">
-                <img class="todo" src="./src/img/websites.png" alt="">
-                <div class="project-description">
-                  <ul>
-                    <li>使用：栅格系统+媒体查询+组件化js</li>
+                    <li>使用：栅格系统 + 媒体查询 + 组件化js</li>
                     <li>功能：企业网站入口，移动端自适应</li>
                   </ul>
                 </div>
               </div>
               <p class="projectInfo">
-                企业站首页[1][2]
+                企业站首页
               </p>
               <div class="projectLink">
                 <a href="http://guidetheorient.coding.me/X-MEN-Intro/dist/" target="_blank">
@@ -178,7 +233,7 @@
               </div>
             </li>
             <!-- vue-resume -->
-            <li>
+            <!-- <li>
               <div class="preview">
                 <img class="resume" src="./src/img/resume.jpg" alt="">
                 <div class="project-description">
@@ -203,9 +258,9 @@
                   </svg>
                 </a>
               </div>
-            </li>
+            </li> -->
             <!-- 常用组件 -->
-            <li>
+            <!-- <li>
               <div class="preview">
                 <img class="components" src="./src/img/1.jpg" alt="">
                 <div class="project-description">
@@ -224,17 +279,15 @@
                     <use xlink:href="#icon-code"></use>
                   </svg>
                 </a>
-            </li>
+            </li> -->
             <!-- 其他 -->
             <li>
               <div class="preview">
                 <img class="other" src="./src/img/other.jpg" alt="">
                 <div class="project-description">
                   <ul>
-                    <li>1. Node天气查询小工具</li>
+                    <li>1. Vue Todo</li>
                     <li>2. ECharts实例</li>
-                    <li>3. X-MEN介绍页面</li>
-                    <li>4. Vue Todo</li>
                   </ul>
                 </div>
               </div>
@@ -250,7 +303,6 @@
             </li>
           </ul>
         </div>
-        
       </div>
       <div class="skills section easing layout">
         <ul class="skillList">
@@ -260,25 +312,24 @@
             <ul class="skillItem">
               <li>编写语义化的HTML，可复用的CSS，使用Sass</li>
               <li>熟悉栅格、flex、浮动定位、常见的布局和动画等</li>
-              <li>了解已标准化的HTML5/CSS3新特性</li>
+              <li>了解HTML5/CSS3新特性</li>
             </ul>
           </li>
           <li>
             <h2>02.</h2>
             <h3>JavaScript</h3>
             <ul class="skillItem">
-              <li>熟悉原生JavaScript，DOM，BOM，Ajax</li>
-              <li>熟悉jQuery的使用，了解jQuery插件的编写</li>
-              <li>熟悉Vue的使用，了解ECMAScript新标准及相关后处理工具并能在项目中使用</li>
+              <li>熟悉原生JavaScript，DOM，BOM，Ajax，jQuery</li>
+              <li>熟悉Vue的使用，了解ECMAScript新标准并能在项目中使用</li>
             </ul>
           </li>
           <li>
             <h2>03.</h2>
-            <h3>前端工程实践</h3>
+            <h3>前端工程化</h3>
             <ul class="skillItem">
-              <li>依赖gulp自动化检查，合并，压缩，浏览器自动刷新，部署文件生成等来改进工作流</li>
-              <li>使用RequireJS/webpack等模块化解决方案</li>
-              <li>掌握基本的前端兼容性处理、性能优化知识及技巧</li>
+              <li>使用webpack进行模块化，资源处理打包</li>
+              <li>使用gulp自动化检查，合并，压缩，部署文件生成等来改进工作流</li>
+              <li>掌握常见的前端兼容性处理、性能优化知识及技巧</li>
             </ul>
           </li>
         </ul>

@@ -53,15 +53,16 @@ html,body{
   margin: 0 auto;
   text-align: center;
 }
-#side .portrait{
-  /* margin-top: 70px; */
+#side .head .portrait-wrapper{
+  overflow: hidden;
   margin-bottom: 30px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   box-shadow: 0 4px 12px 0 rgba(84,84,120,0.3);
+  opacity: .9;
 }
-#side .portrait:hover{
+#side .portrait-wrapper:hover{
   animation: pulse 1s ;
   animation-fill-mode: both;
 }
@@ -76,6 +77,11 @@ html,body{
     transform: scaleX(1)
   }
 }
+#side .head .portrait-wrapper .portrait{
+  width: 100px;
+}
+
+
 
 #side .name{
   font-size: 20px;
@@ -396,6 +402,8 @@ html,body{
 }
 .projects ul.projectList>li>.preview>.project-description ul{
   position: absolute;
+  left: 20px;
+  right: 20px;
   bottom: 10px;
   font-size: 14px;
   font-weight: 300;
@@ -413,6 +421,12 @@ html,body{
 }
 .projects ul.projectList>li>.preview:hover>img{
   transform: scale(1.5);
+}
+.projects ul.projectList>li>.preview>.jingdong{
+  width: 100px;
+}
+.projects ul.projectList>li>.preview>.weather{
+  width: 220px;
 }
 .projects ul.projectList>li>.preview>.netease{
   width: 190px;
